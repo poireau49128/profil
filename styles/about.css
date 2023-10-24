@@ -1,0 +1,214 @@
+/*.gradiennt-block{
+	width: 100%;
+	height: 400px;
+	background: linear-gradient(to right, #444444, #B9B9B9);
+	align-items: center;
+	justify-content: flex-start;
+	padding: 10% 5%;
+	margin-top: 100px;
+}
+
+.gradiennt-block h1{
+	width: 70%;
+	max-width: 400px;
+	color: white;
+	font-family: "Proxima Nova",-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 44px;
+  text-transform: none;
+  letter-spacing: 0;
+  line-height: 56px;
+  padding-top: 50%;
+}
+
+.call-us{
+	display: inline-block;
+	padding: 10px 30px;
+	background-color: #23B9A2;
+	color: white;
+	text-decoration: none;
+	border-radius: 2px;
+	transition: all 0.5s;
+
+	font-family: "Proxima Nova",-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.call-us:hover{
+	background-color: white;
+	color: #23B9A2;
+
+}*/
+
+
+
+.gradiennt-block {
+  /*width: 100%;*/
+  height: 300px;
+  background: linear-gradient(to right, #444444, #B9B9B9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10% 15%;
+  margin-top: 100px;
+  font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  color: white;
+  /*margin-bottom: 20px;*/
+}
+
+.gradiennt-block h1 {
+  width: 70%;
+  max-width: 600px;
+  font-weight: 700;
+  
+  text-transform: none;
+  letter-spacing: 0;
+  
+}
+@media(min-width: 728px){
+	.gradiennt-block h1{
+		line-height: 56px;
+  	font-size: 44px;
+	}
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #23B9A2;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: all 0.5s;
+  font-weight: 600;
+  width: 140px;
+  color: white;
+}
+
+.button:hover {
+  background-color: white;
+  color: #23B9A2;
+ 	border: solid 1px #23B9A2;
+}
+
+
+
+.why-choose-us{
+	display: flex;
+}
+
+.our-strengths{
+	display: flex;
+}
+
+.sub-block {
+  flex: 1;
+  width: 50%;
+  margin-bottom: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.sub-text{
+	width: 60%;
+}
+
+.stats{
+	grid-template-columns: repeat(3, 1fr);
+	text-align: left;
+	margin-bottom: 200px;
+}
+
+.counter{
+	color: #23B9A2;
+	font-size: 45px;
+	font-family: "Hind",-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;
+	font-weight: inherit;
+}
+.stats-label{
+	font-size: 18px !important;
+  color: #141414;
+  margin-left: 0px !important;
+}
+
+h3{
+	font-family: "Proxima Nova",-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 34px;
+  text-transform: none;
+  letter-spacing: -0.003em;
+  line-height: 46px;
+  color: rgba(49,50,51,1);
+  margin-bottom: 0px;
+}
+
+hr{
+	height: 2px;
+  width: 6%;
+  background: rgba(35,185,162,1);
+  text-align: left;
+  margin: 30px 0;
+}
+
+.stats-line h2{
+	color: white;
+  font-family: "Proxima Nova",-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen-Sans,Ubuntu,Cantarell,'Helvetica Neue',sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: 0;
+  line-height: 56px;
+  margin: 0;
+}
+
+.stats-line{
+	position: relative;
+	padding-left: 0px;
+}
+.stats-line:after{
+	/*content: '';
+	width: 200px;
+	height: 200px;
+	color: white;*/
+	content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  max-width: 1300px;
+  height: 40px;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+
+.container img{
+	width: 100%;
+}
+
+.equipment img{
+	width: 60%;
+}
+
+.equipment h3{
+	margin-top: 0;
+}
+
+.more-info{
+	background-image: url(https://brandexponents.com/exponent-lite/construction/wp-content/uploads/sites/14/2018/09/construction-abt-cta.svg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center right;
+  background-size: contain;
+
+  height: 300px;
+}

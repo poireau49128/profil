@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Новости</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/about.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+        <div class="header-body">
+          <div class="header-top">
+              <div class="header-top-logo">
+                  <img src="./Images/logo.png" style="height:55px; display: inline-block;" />
+                  <div class="slogan">
+                    <p>ОМЦ-ПРОФИЛЬ</p>
+                    <i style="font-size: 25px;  font-family: OpenSans-Regular;">Красивый слоган</i>
+                  </div>
+              </div>
+
+              <div class="header-top-cont">
+                  <a href="http://www.wm-shop.by/" onclick="ymetr()" target="_blank" style="margin-right:-4px;">
+                      <div class="shop noselect">
+                          <img src="./Images/cart.png" class="img" />
+                          <span class="but">ИНТЕРНЕТ-МАГАЗИН</span>
+                      </div>
+                  </a>
+                  <div class="EU noselect" style="margin:0">
+                      <img src="./Images/globe.png" class="img" />
+                      <span class="but">EN</span>
+                  </div>
+
+                  <div class="links">
+                    <div class="numb" style="margin-right:20px">
+                      <a target="_blank" href="https://www.facebook.com/%D0%A1-%D0%9E%D0%9E%D0%9E-%D0%97%D0%9E%D0%92-%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C-150153668848633/">
+                          <img src="./Images/facebook.png" class="img" />
+                      </a>
+                  </div>
+                  <div class="numb" style="margin-right:20px">
+                      <a target="_blank" href="https://www.instagram.com/zovprofil.by/">
+                          <img src="./Images/inst.png" class="img" />
+                      </a>
+                  </div>
+                  <div class="numb">
+                      <img src="./Images/call.png" class="img" />
+                      <span class="phonem">+375 (152) 60-81-63</span>
+                  </div>
+                  </div>
+              </div>
+          </div>
+          <div class="header-burger">
+            <span></span>
+          </div>
+          <nav class="noselect main-menu">
+          <div class="back">
+              <div class="back-cont">
+                  <a href="index.html" class="item">
+                      <div id="MainItem" runat="server" class="text">
+                          Главная
+                      </div>
+                  </a>                
+                  <a href="https://zovprofil.by/Production" class="item">
+                      <div id="ProdItem" runat="server" class="text">
+                          Каталог
+                      </div>
+                  </a>
+                  <a href="news.html"  class="item">
+                      <div id="NewsItem" runat="server" class="text">
+                          Новости
+                      </div>
+                  </a>
+                  <a href="https://zovprofil.by/Downloads"  class="item">
+                      <div id="DownloadsItem" runat="server" class="text">
+                          Клиентам
+                      </div>
+                  </a>
+                  <a href="about.html"  class="item">
+                      <div id="AboutItem" runat="server" class="text">
+                          О компании
+                      </div>
+                  </a>
+                  <a href="/Contacts"  class="item">
+                      <div id="ContactsItem" runat="server" class="text">
+                          Контакты
+                      </div>
+                  </a>
+              </div>
+          </div>
+          
+    </nav>
+      </div>
+  </header>
+
+    <main>
+      <div class="gradiennt-block">
+        <h1>
+          Мы внедряем инновации для лучшего будущего
+        </h1>
+        <a href="#" class="button">Связаться с нами</a>
+      </div>
+
+      <!-- <div class="container"> -->
+        <div class="why-choose-us">
+          <img class="sub-block" src="Images/why-choose-us.jpg" alt="">
+          <div class="sub-block">
+            <div class="sub-text">
+              <h3>Почему выбирают нас?</h3>
+              <hr>
+              <div class="stats">
+                <div class="stats-block">
+                  <div class="counter" data-target="20">0</div>
+                  <p class="stats-label">Лет</p>
+                </div>
+                <div class="stats-block">
+                    <div class="counter" data-target="407">0</div>
+                  <p class="stats-label">В2В клиентов</p>
+                </div>
+                <div class="stats-block">
+                  <div class="counter" data-target="100000">0</div>
+                  <p class="stats-label">Выполненных заказов</p>
+                </div>
+              </div>
+              <span>
+                - имеем производственную площадь 4700 м2;<br>
+                - имеем возможность выпускать 400 000 погонных метров МДФ профилей в месяц;<br>
+                - штат сотрудников увеличился до 70 человек;<br>
+                - уже завоевали доверие партнеров в Беларуси, России, Литве, Латвии, Польше, Казахстане и других странах;<br>
+                - постоянно экспериментируем с формами и цветами, расширяя ассортимент продукции.<br>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="our-strengths">
+          <div class="sub-block">
+            <div class="sub-text">
+              <h3>Наши преимущества</h3>
+              <hr>
+              <span>
+                - экологически чистые упаковочные материалы<br>
+                - высокотехнологичное оборудование ведущих европейских производителей<br>
+                - специализированный программный модуль для обработки и контроля готовности заказов<br>
+              </span>
+            </div>    
+          </div>
+          <img src="Images/имитация-т1-60-элегант.png" alt="" class="sub-block">
+        </div>
+      <!-- </div> -->
+      <div class="stats-line">
+        <h2 style="font-size: 18px;">Как мы работаем</h2>
+        <h2 style="font-size: 44px;">Мы страстно стремимся<br>к лучшему миру</h2>
+      </div>
+      <div class="container">
+          <img src="Images/image-9.png" alt="">
+          <div class="stats" style="text-align: center; color: rgba(132,137,145,1);">
+            <div class="block">
+              <h3 style="font-size: 20px;">Профиля и декоративные элементы<br></h3>Любая форма формованного профиля по чертежу заказчика
+            </div>
+            <div class="block">
+              <h3 style="font-size: 20px;">Мебельные фасады</h3>Более 30 форм мебельных фасадов в классическом и современном стилях
+            </div>
+            <div class="block">
+              <h3 style="font-size: 20px;">Готовая мебель</h3>Мы предлагаем шесть коллекций готовой мебели для гостиных и спален, которые отличаются по стилю: изысканная классика, простой скандинавский стиль и свежий модерн
+            </div>
+          </div>
+
+          <div class="equipment">
+            <div style="display: flex; margin: 30px;">
+              <div style="margin: auto 50px;">
+                <h3>Высокоточное оборудование</h3>
+                <p>
+                  - Holzma группы Homag для раскроя деталей из МДФ. <br>
+                  - Barberan: две линии для окутывания профилей. <br>
+                  - Weinig (Германия) и SCM (Италия) для фрезерования профилей. <br>
+                  - А также Cefla, Stemas, Renzo Borgonovo, Elme, Balestrini, L.C.R. и др.
+                </p>
+              </div>
+              <img src="Images/image.png" alt="">
+            </div>
+            <div style="display: flex;">
+              <img src="Images/image-3.png" alt="">
+              <div style="margin: auto 50px;">
+                <h3>Мы говорим "нет" компромиссам</h3>
+                <p>
+                  При производстве готовой мебели мы используем высококачественные МДФ польского и российского производства, экологически чистые облицовочные материалы ведущего немецкого производителя RENOLIT с уникальным рисунком текстуры дерева и фурнитуру HETTICH (шариковые держатели).
+                </p>
+              </div>
+            </div>
+          </div>
+      </div>
+      
+      <div class="more-info">
+        <h3 style="text-align: center;">Хотите получить более подробную информацию о нашей продукции?</h3>
+        <a href="#" class="button">Смотреть видео</a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+        <div class="left">
+            <a href="https://zovprofil.by/Production" style="display:block; margin-top:8px;">• Каталог</a>
+            <a href="/Contacts" style="display:block; margin-top:8px;">• Контакты</a>
+        </div>
+        <div class="center">
+            <div class="cont">
+                <img src="./Images/foot.png"  style="margin-top:15px; width:190px;"/>
+                <span class="f-text" style="padding-top:12px;">2017-2022 © ООО "ОМЦ-Профиль"</span>
+            </div>
+        </div>
+        <div class="right">
+            <span style="text-align:right; font-family:OpenSans-Semibold; color:white; font-size:14px;">Адрес фабрики и склада</span>
+            <span class="f-text" style="font-size:14px; padding-top:12px;">ул. Герасимовича, 1-3<br />230011 г. Гродно<br />Республика Беларусь</span>
+        </div>
+    </div>    
+  </footer>
+
+  <script>
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+  </script>
+
+  <!-- Stats -->
+ <script>
+  function countTo(target, duration, counterElement) {
+    const start = parseInt(counterElement.innerText);
+    const increment = Math.ceil(target / (duration * 60)); // Увеличение на 1 раз в 1/60 секунды (60 FPS)
+
+    let current = start;
+    const timer = setInterval(() => {
+      current += increment;
+      counterElement.innerText = current;
+
+      if (current >= target) {
+        clearInterval(timer);
+        counterElement.innerText = target;
+      }
+    }, 1000 / 60); // Обновление каждые 1/60 секунды (60 FPS)
+  }
+
+  const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.5 // Пороговое значение в 0.5 означает, что элемент считается видимым, когда его видимость составляет 50% или более
+  };
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const counterElement = entry.target;
+        const target = parseInt(counterElement.dataset.target);
+        const duration = 2; // Длительность анимации в секундах
+
+        countTo(target, duration, counterElement);
+        observer.unobserve(counterElement); // Прекращаем наблюдение за элементом после запуска анимации
+      }
+    });
+  }, options);
+
+  const counterElements = document.querySelectorAll('.counter');
+  counterElements.forEach(counterElement => {
+    observer.observe(counterElement);
+  });
+ </script>
+
+</body>
+</html>

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/main.css">
+	<title>Главная</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="script.js"></script>
+	<!-- Yandex Map Init -->
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=1db66745-f55a-49b7-837f-addabfcd4f61"></script>
+	<script src="balloon_autopan.js" type="text/javascript"></script>
+	<!-- Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+<body>
+	<!-- Header -->
+	<header class="header">
+    <div class="header-body">
+    	<div class="header-top">
+      	<div class="header-top-logo">
+            <img src="./Images/logo.png" style="height:55px; display: inline-block;" />
+            <div class="slogan">
+            	<p>ОМЦ-ПРОФИЛЬ</p>
+            	<i style="font-size: 25px;  font-family: OpenSans-Regular;">Красивый слоган</i>
+            </div>
+        </div>
+
+        <div class="header-top-cont">
+          <a href="http://www.wm-shop.by/" onclick="ymetr()" target="_blank" style="margin-right:-4px;">
+              <div class="shop noselect">
+                  <img src="./Images/cart.png" class="img" />
+                  <span class="but">ИНТЕРНЕТ-МАГАЗИН</span>
+              </div>
+          </a>
+          <div class="EU noselect" style="margin:0">
+              <img src="./Images/globe.png" class="img" />
+              <span class="but">EN</span>
+          </div>
+
+          <div class="links">
+          	<div class="numb" style="margin-right:20px">
+              <a target="_blank" href="https://www.facebook.com/%D0%A1-%D0%9E%D0%9E%D0%9E-%D0%97%D0%9E%D0%92-%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C-150153668848633/">
+                  <img src="./Images/facebook.png" class="img" />
+              </a>
+          	</div>
+	          <div class="numb" style="margin-right:20px">
+	              <a target="_blank" href="https://www.instagram.com/zovprofil.by/">
+	                  <img src="./Images/inst.png" class="img" />
+	              </a>
+	          </div>
+	          <div class="numb">
+	              <img src="./Images/call.png" class="img" />
+	              <span class="phonem">+375 (152) 60-81-63</span>
+	          </div>
+        	</div>
+        </div>
+      </div>
+      <div class="header-burger">
+      	<span></span>
+      </div>
+      <nav class="noselect main-menu">
+		    <div class="back">
+		      <div class="back-cont">
+		        <a href="index.html" class="item">
+              <div id="MainItem" runat="server" class="text">
+                  Главная
+              </div>
+            </a>                
+            <a href="https://zovprofil.by/Production" class="item">
+                <div id="ProdItem" runat="server" class="text">
+                    Каталог
+                </div>
+            </a>
+            <a href="news.html"  class="item">
+                <div id="NewsItem" runat="server" class="text">
+                    Новости
+                </div>
+            </a>
+            <a href="https://zovprofil.by/Downloads"  class="item">
+                <div id="DownloadsItem" runat="server" class="text">
+                    Клиентам
+                </div>
+            </a>
+            <a href="about.html"  class="item">
+                <div id="AboutItem" runat="server" class="text">
+                    О компании
+                </div>
+            </a>
+            <a href="/Contacts"  class="item">
+                <div id="ContactsItem" runat="server" class="text">
+                    Контакты
+                </div>
+            </a>
+		      </div>
+		    </div>
+			</nav>
+    </div>
+  </header>
+
+    <!-- Swiper -->
+    <div class="swiper" style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff; ">
+	    <div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img src="./Images/slide1.jpg" alt="">
+			</div>
+			<div class="swiper-slide">
+				<img src="./Images/slide2.jpg" alt="">
+			</div>
+			<div class="swiper-slide">
+				<video src="./videos/about.mp4" autoplay muted loop></video>
+			</div>
+	    </div>
+	    <div class="swiper-button-next"></div>
+	    <div class="swiper-button-prev"></div>
+	    <div class="swiper-pagination"></div>
+	  </div>
+
+	<!-- Content -->
+	<main>
+		<div class="container">
+			<h2>НАША ПРОДУКЦИЯ</h2>
+			<div class="products">
+				<div class="product-block">
+					<img src="./Images/test.gif" alt="" class="product-image">
+					<div class="product-desc">
+						Интерьерные декоры:</br>
+						<a href="#">- рейки</a></br>
+						<a href="#">- панели</a></br>
+						<a href="#">- вагонка</a></br>
+						<a href="#">- плинтус</a></br>
+					</div>
+				</div>
+				<div class="product-block">
+					<img src="./Images/test.gif" alt="" class="product-image">
+					<div class="product-desc">
+						Чем меньше текста<br>
+						Тем лучше соотносятся размеры
+					</div>
+				</div>
+				<div class="product-block">
+					<img src="./Images/test.gif" alt="" class="product-image">
+					<div class="product-desc">
+						Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Placeat ut fugiat molestias voluptatum quia, aliquam et perspiciatis, iusto neque, illum deserunt nostrum dolor, nulla dolore. Fugiat amet, laborum sed quod.
+					</div>
+				</div>
+				<div class="product-block">
+					<img src="./Images/test.gif" alt="" class="product-image">
+					<div class="product-desc">
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta eum reiciendis voluptatum molestias quibusdam quos odio suscipit, numquam dolores ex rem obcaecati nostrum, commodi officia facere ut corporis. Necessitatibus, facilis.
+					</div>
+				</div>
+				<div class="product-block">
+					<img src="./Images/test.gif" alt="" class="product-image">
+					<div class="product-desc">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse dolor aliquam incidunt recusandae repudiandae ea! Earum, aperiam adipisci consectetur cumque asperiores veritatis sint non voluptatum reiciendis, harum dolores officiis sequi.
+					</div>
+				</div>
+				<div class="product-block">
+					<img src="./Images/test.gif" alt="" class="product-image">
+					<div class="product-desc">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse dolor aliquam incidunt recusandae repudiandae ea! Earum, aperiam adipisci consectetur cumque asperiores veritatis sint non voluptatum reiciendis, harum dolores officiis sequi.
+					</div>
+				</div>
+			</div>
+
+			<h2>НАШИ УСЛУГИ</h2>
+			<p class="subtitle">Свяжитесь с нами, если вам нужны какие-либо из этих услуг:</p>
+			<div class="service-container">
+				<div class="service">
+					<a href="https://google.com">
+						<div class="service-image">
+							<img src="./Images/slider1.jpg" alt="">
+						</div>
+					</a>
+					<h5 class="service-header">Название услуги</h5>
+					<p class="service-text">Картинки кликабельные -> переход на страницу услуги, или еще куда-то</p>
+					
+				</div>
+				<div class="service">
+					<a href="https://google.com">
+						<div class="service-image">
+							<img src="./Images/slider1.jpg" alt="">
+						</div>
+					</a>
+					<h5 class="service-header">Название услуги</h5>
+					<p class="service-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit facilis cupiditate suscipit corporis expedita earum quis eius unde. A optio, labore corporis quia officia perspiciatis molestiae nulla suscipit fugiat totam!</p>
+				</div>
+				<div class="service">
+					<a href="https://google.com">
+						<div class="service-image">
+							<img src="./Images/slider1.jpg" alt="">
+						</div>
+					</a>
+					<h5 class="service-header">Название услуги</h5>
+					<p class="service-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, ipsam, perferendis? Consequuntur pariatur rem quasi porro ipsa itaque. Eligendi illo, corrupti aliquam qui eius nihil provident molestias adipisci totam explicabo.</p>
+				</div>
+				<div class="service">
+					<a href="https://google.com">
+						<div class="service-image">
+							<img src="./Images/slider1.jpg" alt="">
+						</div>
+					</a>
+					<h5 class="service-header">Название услуги</h5>
+					<p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptates recusandae error delectus iure, quod autem et obcaecati nisi. Cupiditate possimus assumenda fuga quas, officiis similique saepe tempore incidunt deserunt?</p>
+				</div>
+				<div class="service">
+					<a href="https://google.com">
+						<div class="service-image">
+							<img src="./Images/slider1.jpg" alt="">
+						</div>
+					</a>
+					<h5 class="service-header">Название услуги</h5>
+					<p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt obcaecati labore earum accusamus soluta similique, doloribus architecto distinctio rem harum repudiandae. Nostrum, obcaecati asperiores hic ipsum molestiae a repudiandae, quos.</p>
+				</div>
+				<div class="service">
+					<a href="https://google.com">
+						<div class="service-image">
+							<img src="./Images/slider1.jpg" alt="">
+						</div>
+					</a>
+					<h5 class="service-header">Название услуги</h5>
+					<p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, fugiat unde doloremque, commodi sed officia eum maxime beatae temporibus provident, dolorem ea minus. Commodi blanditiis sed dolorem laudantium similique alias?</p>
+				</div>
+			</div>
+		</div>
+
+			<div class="stats-line">
+				<div class="container">
+					<div class="stats">
+						<div class="stats-block">
+							<div class="counter" data-target="2002">0</div>
+							<p class="stats-label">Год основания</p>
+						</div>
+						<div class="stats-block">
+								<div class="counter count-more" data-target="400">0</div>
+							<p class="stats-label">В2В клиенты</p>
+						</div>
+						<div class="stats-block">
+							<div class="counter" data-target="120">0</div>
+							<p class="stats-label">Базовых декоров</p>
+						</div>
+						<div class="stats-block">
+							<div class="counter" data-target="80">0</div>
+							<p class="stats-label">Наград</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		<div class="container">
+			<h2>НОВОСТИ</h2>
+			<div class="news">
+				<section class="news-item" style="">
+					<div class="news-content">
+				    	<h3 class="news-title">Какая-то новость</h3>
+				    	<p class="news-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, ad, consequuntur. Ipsa in fugit voluptate perspiciatis sit provident suscipit. Consequatur doloremque distinctio quos a totam esse omnis sunt repellat odit.</p>
+					</div>
+					<img src="./Images/slide2.jpg" alt="">
+				</section>
+				<section class="news-item" style="">
+					<div class="news-content">
+				    	<h3 class="news-title">Какая-то новость</h3>
+				    	<p class="news-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, ad, consequuntur. Ipsa in fugit voluptate perspiciatis sit provident suscipit. Consequatur doloremque distinctio quos a totam esse omnis sunt repellat odit.</p>
+					</div>
+					<img src="./Images/slide2.jpg" alt="">
+				</section>
+				<section class="news-item" style="">
+					<div class="news-content">
+				    	<h3 class="news-title">Какая-то новость</h3>
+				    	<p class="news-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, ad, consequuntur. Ipsa in fugit voluptate perspiciatis sit provident suscipit. Consequatur doloremque distinctio quos a totam esse omnis sunt repellat odit.</p>
+					</div>
+					<img src="./Images/slide2.jpg" alt="">
+				</section>
+			</div>
+
+			<h2>ГЕОГРАФИЯ</h2>
+			<div class="wherefind">
+				<div id="map">
+					
+				</div>
+				<input type="range" id="zoom-slider" min="0" max="20" value="14">
+			</div>
+		</div>
+	</main>
+	
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+		    <div class="left">
+		        <a href="https://zovprofil.by/Production" style="display:block; margin-top:8px;">• Каталог</a>
+		        <a href="/Contacts" style="display:block; margin-top:8px;">• Контакты</a>
+		    </div>
+		    <div class="center">
+		        <div class="cont">
+		            <img src="./Images/foot.png"  style="margin-top:15px; width:190px;"/>
+		            <span class="f-text" style="padding-top:12px;">2017-2022 © ООО "ОМЦ-Профиль"</span>
+		        </div>
+		    </div>
+		    <div class="right">
+		        <span style="text-align:right; font-family:OpenSans-Semibold; color:white; font-size:14px;">Адрес фабрики и склада</span>
+		        <span class="f-text" style="font-size:14px; padding-top:12px;">ул. Герасимовича, 1-3<br />230011 г. Гродно<br />Республика Беларусь</span>
+		    </div>
+		</div>		
+	</footer>
+
+
+
+<!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".swiper", {
+      rewind: true,
+      spaceBetween: 30,
+      speed: 500,
+      centeredSlides: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 7000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
+ <script>
+	const image = document.querySelector('.service-image img');
+	image.addEventListener('load', function() {
+	  image.parentElement.classList.add('loaded');
+	});
+ </script>
+
+
+
+
+
+<!-- Stats -->
+ <script>
+	function countTo(target, duration, counterElement) {
+	  const start = parseInt(counterElement.innerText);
+	  const increment = Math.ceil(target / (duration * 60)); // Увеличение на 1 раз в 1/60 секунды (60 FPS)
+
+	  let current = start;
+	  const timer = setInterval(() => {
+	    current += increment;
+	    counterElement.innerText = current;
+
+	    if (current >= target) {
+	      clearInterval(timer);
+	      counterElement.innerText = target;
+	    }
+	  }, 1000 / 60); // Обновление каждые 1/60 секунды (60 FPS)
+	}
+
+const options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.5 // Пороговое значение в 0.5 означает, что элемент считается видимым, когда его видимость составляет 50% или более
+};
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const counterElement = entry.target;
+      const target = parseInt(counterElement.dataset.target);
+      const duration = 2; // Длительность анимации в секундах
+
+      countTo(target, duration, counterElement);
+      observer.unobserve(counterElement); // Прекращаем наблюдение за элементом после запуска анимации
+    }
+  });
+}, options);
+
+const counterElements = document.querySelectorAll('.counter');
+counterElements.forEach(counterElement => {
+  observer.observe(counterElement);
+});
+ </script>
+
+ <!-- Services -->
+<script>
+	function handleIntersection(entries, observer) {
+	  entries.forEach((entry) => {
+	    if (entry.isIntersecting) {
+	      entry.target.classList.add('animated-element');
+	      observer.unobserve(entry.target);
+	    }
+	  });
+	}
+
+	const animationObserver = new IntersectionObserver(handleIntersection, {root: null, threshold: 0.1});
+
+	const animatedElements = document.querySelectorAll('.service-image');
+	animatedElements.forEach(animatedElement => {
+	  animationObserver.observe(animatedElement);
+	});
+</script>
+
+
+
+<!-- Yandex Map -->
+<script type="text/javascript">
+  ymaps.ready(init);
+
+  function init() {
+    var center = [53.67790078445547, 23.843917417968633];
+    var myMap = new ymaps.Map("map", {
+      center: center, // Координаты центра карты
+      zoom: 14, // Масштаб карты
+      controls: ['zoomControl'] 
+    });
+    myMap.behaviors.disable('scrollZoom');
+
+    // Получаем ссылку на DOM-элемент карты
+    var mapContainer = document.getElementById('map');
+    var zoomSlider = document.getElementById('zoom-slider');
+
+    mapContainer.addEventListener('wheel', function (event) {
+      event.preventDefault();
+      var currentZoom = myMap.getZoom();
+      var newZoom = currentZoom - event.deltaY / 100;
+      myMap.setZoom(newZoom, { duration: 200 });
+
+      zoomSlider.value = newZoom;
+    });
+
+    myMap.events.add('zoomchange', function (event) {
+	    var zoomValue = myMap.getZoom(); // Получение текущего значения масштаба карты
+	    zoomSlider.value = zoomValue; // Установка нового значения ползунка
+	  });
+
+
+    /*var zoomSlider = document.getElementById('zoom-slider');*/
+
+	zoomSlider.addEventListener('input', function () {
+	  var zoomValue = parseInt(this.value); // Получение значения ползунка
+	  myMap.setZoom(zoomValue); // Установка нового масштаба карты
+	});
+
+    // Создание маркеров для каждого магазина
+    var placemarks = [
+      {
+        coordinates: [53.676188436081084, 23.812674197095394], // Координаты первого магазина
+        name: "Магазин 1",
+        address: "Адрес магазина 1"
+      },
+    ];
+
+    // Добавление маркеров на карту
+    for (var i = 0; i < placemarks.length; i++) {
+      var placemark = new ymaps.Placemark(placemarks[i].coordinates, {
+        hintContent: placemarks[i].name,
+        balloonContent: placemarks[i].address
+      });
+
+      myMap.geoObjects.add(placemark);
+    }
+    myMap.controls.remove('geolocationControl');
+    myMap.controls.remove('searchControl');
+    myMap.controls.remove('trafficControl');
+    myMap.controls.remove('typeSelector');
+    myMap.controls.remove('fullscreenControl');
+  }
+</script>
+
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

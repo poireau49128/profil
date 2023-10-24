@@ -1,0 +1,9 @@
+.news-image{
+	width: 100%;
+}
+
+.news-title h1{
+	margin: 0px;
+	padding-bottom: 0px;
+	border: solid 3px red;
+}
